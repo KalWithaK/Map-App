@@ -20,8 +20,13 @@
                     <input type="text" th:field="*{state}" placeholder="State" class="form-control"/>		        
                 </div>	        
                 <div class="form-group">
-                    <button class="btn btn-md btn-primary btn-block" name="Submit" value="Submit" type="Submit">Update Map</button>
+                    <button id="update" class="btn btn-md btn-primary btn-block" name="Submit" value="Submit" type="Submit">Update Map</button>
                 </div>
+            </form>
+            <form th:action="@{/rand}" th:object="${location1}" method="post" autocomplete="on" class="form-inline">
+               <div class="form-group">
+               		<button id="random" class="btn btn-md btn-primary" name="Submit" value="Submit" type="Submit">Random Location</button>
+            	</div>
             </form>
             <br/>
         </div>
@@ -33,7 +38,7 @@
 <script th:inline="javascript">
     /*<![CDATA[*/
 		
-    var coords = {
+  var coords = {
     lat: parseFloat(/*[[${location.lat}]]*/) || 39.9612,
     lng: parseFloat(/*[[${location.lng}]]*/) || -82.9988
 		};
@@ -41,6 +46,7 @@
 	var state = /*[[${location.state}]]*/;
 
     /*]]>*/
+    
 </script>
 <script th:inline="javascript" src="/custom.js"></script>
     

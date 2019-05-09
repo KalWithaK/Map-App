@@ -10,4 +10,5 @@ import lombok.Data;
 public class Geocoding {
 	private Geometry geometry;
 
+
 }

@@ -9,6 +9,8 @@ public class MapsAppApplication {
 	public static void main(String[] args) {
 		
 		SpringApplication.run(MapsAppApplication.class, args);
+		
+		
 	}
 
 }

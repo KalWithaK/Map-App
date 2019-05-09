@@ -11,3 +11,7 @@ html, body {
 #map {
     height: 75%;
 }
+
+#random {
+	float: left;
+}

@@ -9,6 +9,9 @@ import lombok.Data;
 @SpringBootApplication
 @Data
 public class GeocodingResponse {
-	private List<Geocoding> results;
+	List<Geocoding> results;
+	
+	
+	
 
 }
